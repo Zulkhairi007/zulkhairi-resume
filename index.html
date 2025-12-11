@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My E-Resume - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #87CEEB;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .container {
+            padding: 20px;
+        }
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+        /* Image zoom */
+        .zoom-image {
+            width: 150px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .zoomed {
+            transform: scale(3);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My E-Resume</h1>
+    <p>Welcome to My Personal E-Resume</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="extracurricular.html">Extra-curricular</a>
+    <a href="academic.html">Academic</a>
+    <a href="contact.html">Contact Me</a>
+    <a href="family.html">Family</a>
+</nav>
+
+<div class="container">
+    <h2>Home</h2>
+    <p>اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اَللهِ وَبَرَكَاتُهُ, my name is <strong>Muhamad Zulkhairi Bin Zulkifli</strong>. This e-resume website is created
+        for IMS561 Web Publishing assignment. Here you can learn about my personal
+        background, education, hobbies, extra-curricular activities and more.</p>
+
+    <h3>My Picture (Click to Zoom)</h3>
+       <img src="Zul1.jpg" alt="My profile picture" id="profileImage" class="zoom-image">
+
+   </div>
+
+<footer>
+    © 2025 Muhamad Zulkhairi Bin Zulkifli. Recommended browser: Google Chrome. Last update: March 2025.
+</footer>
+
+<script>
+    // Make picture zoom 3 times when clicked
+    const img = document.getElementById("profileImage");
+    img.addEventListener("click", function () {
+        img.classList.toggle("zoomed");
+    });
+</script>
+
+</body>
+</html>
